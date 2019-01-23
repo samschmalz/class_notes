@@ -894,7 +894,7 @@ Motivation
       ▪ not restricted to a specific programming style
    ◇ untyped language</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Mutations" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1541165458.2" ts_lastsave="1541166136.6" unique_id="53">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Mutations" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1541165458.2" ts_lastsave="1543588404.26" unique_id="53">
 			<rich_text>
 Combining Paradigms
 • know how to interpret imperative languages
@@ -936,6 +936,19 @@ Sequencing
 • sequencing: e1 ; e2 is similar
    ◇ e1 is not interpreted for its value
    ◇ interpreted for its side effect</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Prolog" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1543588404.27" ts_lastsave="1543588495.06" unique_id="55">
+			<rich_text>
+Trees
+• construct binary trees w/ functors
+   ◇ functor: Data* -&gt; Data
+   ◇ predicate: Data* -&gt; Bool
+• construction:
+   ◇ leave constructs tree from value
+      ▪ arity is 1
+   ◇ node constructs tree from two trees
+      ▪ arity is 2
+   ◇ ex: node(node(leaf(3), leaf(7)),leaf(5))</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="True" name="CIS 560" prog_lang="plain-text" readonly="False" tags="" ts_creation="1534955805.15" ts_lastsave="1535732771.78" unique_id="4">
@@ -1837,7 +1850,7 @@ Snapshot Isolation Level
 
 </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Data Warehouses" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1542044259.76" ts_lastsave="1542044556.8" unique_id="54">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Data Warehouses" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1542044259.76" ts_lastsave="1542044662.63" unique_id="54">
 			<rich_text>
 What are Data Warehouses?
 • relational databases specialized for reporting
@@ -1857,7 +1870,7 @@ Why?
 
 
 Business Intelligence
-• </rich_text>
+• Data -&gt; Information -&gt; Knowledge</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="True" name="STAT 510" prog_lang="plain-text" readonly="False" tags="" ts_creation="1535034756.68" ts_lastsave="1535034756.68" unique_id="7">

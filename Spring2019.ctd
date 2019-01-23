@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="HIST251" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548170769.18" ts_lastsave="1548170769.18" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 22" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548170783.82" ts_lastsave="1548173120.59" unique_id="2">
+			<rich_text>• need the book for McGraw Hill code
+   ◇ 1-800-331-5094
+   ◇ McGraw Hill support number
+• Digital Syllabus online
+
+Point Breakdown:
+• 140 pts - weekly reading
+• 105 pts - primary sources
+• 100 pts - exam 1
+• 100 pts - exam 2
+• 100 pts - final exam
+• 100 pts - final exam essay
+• 645 pts - total
+
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 23" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548275242.38" ts_lastsave="1548278241.16" unique_id="4">
+			<rich_text>Specifications
+• problem is specified with a contract
+   ◇ given input satisfying a </rich_text>
+			<rich_text style="italic">precondition</rich_text>
+			<rich_text>
+   ◇ given output satisfying a </rich_text>
+			<rich_text style="italic">postcondition</rich_text>
+			<rich_text>
+• Example: informal contract (with x, y ints)
+   ◇ return in y the square root of x
+   ◇ Exercise: formalize this!
+
+PRE: x &gt;= 0, x integer
+POST: y</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> &lt;= x, y integer, (y+1)</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> &gt; x, </rich_text>
+			<rich_text strikethrough="true">y &gt;= 0</rich_text>
+			<rich_text>
+• y &gt;= 0 is made redundant by (y+1)</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> &gt; x
+
+
+Implementation
+• the task of an algorithm
+   ◇ described in a standard programming language
+      ▪ no library functions
+   ◇ uses osme time and space, which should be minimized
+• Example: return in y the integer square root of x
+   ◇ naive algorithm takes time proportional to y
+   ◇ but exists algorithm based on binary search that takes time proportional to the logarithm of y
+
+
+Sorting
+• commonly-analyzed algorithm category
+• has specification:
+   ◇ PRE: Array A[1..n] of numbers
+      ▪ or something with a total order
+   ◇ POST: A[1..n] is non-decreasing</rich_text>
+		</node>
+	</node>
+</cherrytree>
