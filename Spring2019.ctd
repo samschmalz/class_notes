@@ -2,7 +2,7 @@
 <cherrytree>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="HIST251" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548170769.18" ts_lastsave="1548170769.18" unique_id="1">
 		<rich_text></rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 22" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548170783.82" ts_lastsave="1548173120.59" unique_id="2">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 22" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548170783.82" ts_lastsave="1548344330.02" unique_id="2">
 			<rich_text>• need the book for McGraw Hill code
    ◇ 1-800-331-5094
    ◇ McGraw Hill support number
@@ -18,6 +18,76 @@ Point Breakdown:
 • 645 pts - total
 
 </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 24" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548344330.02" ts_lastsave="1548346478.43" unique_id="5">
+			<rich_text>Previous historical records
+• very biased
+• ignore existence of native populations
+• keep in mind who they're written by - the Europeans who landed here
+
+Flora/Fauna
+• pre-human North America had great species diversity
+• climate is more like the sahara or serengeti
+• many large/giant animal species
+• horses were originally native to NA, but died off
+
+First Humans in NA
+• 35,000 - 50,000 years ago
+• likely that some people arrived by boat before the Bering land bridge
+• land bridge around 35k years ago
+• around 10k years ago, domesticated crops created
+   ◇ beans, squash, gourds first
+   ◇ cotton, corn, pottery around 5k years ago
+   ◇ early diets were heavy in corn, causing Niacin deficiencies
+      ▪ natives didn't know what they were missing, but fixed with lime from stone
+
+Olmecs
+• “mother culture”
+   ◇ 1900-1500 BCE
+• create first cities
+   ◇ leads to social heirarchies, leisure classes, art, etc.
+   ◇ more specialization in roles
+• created religious sites
+   ◇ had distinct priest class
+
+Mayans
+• 750 BC
+   ◇ last city conquered by the Spanish in 1697 CE
+• first known heiroglyphic writing
+   ◇ used to write codices with history and info about daily life
+   ◇ many writings burned by the Spanish
+• Came up with concept of 0
+   ◇ incredibly important mathematical concept
+   ◇ allows for large-scale math
+• used calendar called Tzolkin
+
+Aztecs
+• 1325-1521 CE
+• capital city called Tenochititlan
+   ◇ rivals almost every Roman city built, but in less than 200 years
+   ◇ used arches and aqueducts
+• built floating terraces to grow food
+• had several enemies
+   ◇ large empires are rarely built entirely on peace
+
+Inca
+• 1438-1525 CE
+• largest empire in pre-Colombian America
+• built empire in mountains
+   ◇ creates new challenges for agriculture and travel
+   ◇ developed extensive roads and mountain farming systems
+      ▪ over 12,000 miles of roads
+• most artwork destroyed by Spanish
+
+Continental US Natives
+• Cahokia, IL - mound builders
+   ◇ generic term
+   ◇ culture lacked writing, hard to learn from
+   ◇ may have been one group or multiple groups
+• Mesa Verde, CO - Anasazi
+   ◇ built houses into the sides of rock mesas
+   ◇ used pictograms for writing
+      ▪ not as precise as proper writing</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
