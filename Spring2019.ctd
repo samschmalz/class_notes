@@ -92,7 +92,7 @@ Continental US Natives
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
 		<rich_text></rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 23" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548275242.38" ts_lastsave="1548278241.16" unique_id="4">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Introduction" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548275242.38" ts_lastsave="1548451032.22" unique_id="4">
 			<rich_text>Specifications
 • problem is specified with a contract
    ◇ given input satisfying a </rich_text>
@@ -133,7 +133,108 @@ Sorting
 • has specification:
    ◇ PRE: Array A[1..n] of numbers
       ▪ or something with a total order
-   ◇ POST: A[1..n] is non-decreasing</rich_text>
+   ◇ POST: A[1..n] is non-decreasing
+      ▪ ∀i ∀j (1 &lt;= i &lt;= j &lt;= n ⇒ A[i] &lt;= A[j])
+      ▪ ∀i (1 &lt;= i &lt;= n-1) ⇒ A[i] &lt;= A[i+1]
+• will see many sorting algorithms
+   ◇ typically run in n lg(n)
+   ◇ some run in time proportional to n
+      ▪ if extra assumptions
+   ◇ some run in time proportional to n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+
+Selection
+• specifications
+   ◇ PRE: Array a[1..n] of numbers, k with k ∈ 1...n
+   ◇ POST: return the kth smallest element of A
+• Q: may A be modified?
+   ◇ A1: No (default for specification)
+   ◇ A2: yes, but only by permutation
+• Q: what does “x is kth smallest” mean?
+   ◇ there are (k-1) elements that are smaller than x
+
+
+Top-Down Approach to Algorithms
+• Reduction principle
+   ◇ solve a problem by using a solution to a simpler problem
+      ▪ break it down
+• Simple top-down sorting
+   ◇ may sort array A[1..n] as follows:
+      ▪ if n &lt;= 1, then A[1..n] is already sorted
+
+
+Recursive Insertion Sort
+• PRE: A[1..n] is an array of numbers
+• POST: A[1..n] is a permutation of its original values such that A[1..n] is non-decreasing
+• 
+• Notation for passing arrays as parameters:
+   ◇ pointer to the array is passed
+   ◇ boundaries are specified
+• Need to specify InsertLast()
+   ◇ PRE: A[1..n] with n &gt;= 1 is array of numbers such that A[1..n-1] is non-decreasing
+   ◇ POST: A[1..n] is permutation of its original value s.t. A[1..n] is non-decreasing
+• Space Usage
+   ◇ when running, the stack grows to size at least proportional to n
+   ◇ can limit performance as stack space is often limited
+
+
+Bottom-up computation
+• can save stack space by implementing a top-down design in bottom-up fashion
+   1) compute solutions to smallest instance
+   2) using top-down solution as guide, combine solutions of smaller instances to obtain solutions to larger instances
+• fibonacci function
+   ◇ </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+   ◇ takes exponential time if computed naively
+• 
+   ◇ “←” indicates value assignment to a value
+
+
+Insertion Sort, Bottom-Up
+• recall top-down version
+   ◇ unfolds to InsertLast(A[1..2]) ... InsertLast(A[1..n])
+• thus bottom-up version is:
+   ◇ </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+Insert Last Element in Proper Place
+• PRE: A[1..n] with A[1..n-1] non-decreasing
+• POST: A[1..n] is permutation of original values s.t. A[1..n] is non-decreasing
+• 
+
+Iterative Insertion Sort
+• space use: constant amount of extra space is needed
+   ◇ called </rich_text>
+			<rich_text underline="single">in-place</rich_text>
+			<rich_text>
+• time use is:
+   ◇ best case: linear, proportional to n
+   ◇ worst case: quadratic, proportional to n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+   ◇ average case: ???
+      ▪ depends on expected input distribution</rich_text>
+			<codebox char_offset="1939" frame_height="80" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">InsertionSort(A[1..n]):
+    if n &gt; 1
+        InsertionSort(A[1..n-1])
+        InsertLast(A[1..n])</codebox>
+			<codebox char_offset="2693" frame_height="45" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">fib(0) = fib(1) = 1
+fib(n+2) = fib(n) + fib(n+1)</codebox>
+			<codebox char_offset="2745" frame_height="85" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">fib_iter(n):
+    i,j ← n
+    for k ← 1 to n - 1:
+        i,j ← j, i+j
+    return j</codebox>
+			<codebox char_offset="2942" frame_height="55" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">InsertionSort(A[1..n])
+    for i ← 2 to n
+        InsertLast(A[1..i])</codebox>
+			<codebox char_offset="3109" frame_height="85" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">InsertLast(A[1..n])
+    if n &gt; 1 and A[n] &lt; A[n-1]
+        A[n] ↔ A[n-1]
+        InsertLast(A[1..n-1])</codebox>
 		</node>
 	</node>
 </cherrytree>
