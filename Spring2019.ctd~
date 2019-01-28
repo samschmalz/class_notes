@@ -92,7 +92,7 @@ Continental US Natives
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
 		<rich_text></rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Introduction" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548275242.38" ts_lastsave="1548450999.1" unique_id="4">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Introduction" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548275242.38" ts_lastsave="1548707832.88" unique_id="4">
 			<rich_text>Specifications
 • problem is specified with a contract
    ◇ given input satisfying a </rich_text>
@@ -167,7 +167,9 @@ Top-Down Approach to Algorithms
 Recursive Insertion Sort
 • PRE: A[1..n] is an array of numbers
 • POST: A[1..n] is a permutation of its original values such that A[1..n] is non-decreasing
-• 
+• </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
 • Notation for passing arrays as parameters:
    ◇ pointer to the array is passed
    ◇ boundaries are specified
@@ -188,7 +190,9 @@ Bottom-up computation
 			<rich_text justification="left"></rich_text>
 			<rich_text>
    ◇ takes exponential time if computed naively
-• 
+• </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
    ◇ “←” indicates value assignment to a value
 
 
@@ -203,14 +207,22 @@ Insertion Sort, Bottom-Up
 Insert Last Element in Proper Place
 • PRE: A[1..n] with A[1..n-1] non-decreasing
 • POST: A[1..n] is permutation of original values s.t. A[1..n] is non-decreasing
-• 
+• </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
 
 Iterative Insertion Sort
 • space use: constant amount of extra space is needed
    ◇ called </rich_text>
 			<rich_text underline="single">in-place</rich_text>
 			<rich_text>
-   ◇ </rich_text>
+• time use is:
+   ◇ best case: linear, proportional to n
+   ◇ worst case: quadratic, proportional to n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+   ◇ average case: ???
+      ▪ depends on expected input distribution</rich_text>
 			<codebox char_offset="1939" frame_height="80" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">InsertionSort(A[1..n]):
     if n &gt; 1
         InsertionSort(A[1..n-1])
@@ -229,6 +241,16 @@ fib(n+2) = fib(n) + fib(n+1)</codebox>
     if n &gt; 1 and A[n] &lt; A[n-1]
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1548707974.27" unique_id="6">
+			<rich_text>Correctness Proofs
+• people do not fully understand an algorithm until they are able to prove its correctness
+• therefore, we shall
+   ◇ design algorithms with correctness in mind
+
+Correctness of Iterative Algorithms
+• given loop invariant, must prove
+   ◇ </rich_text>
 		</node>
 	</node>
 </cherrytree>
