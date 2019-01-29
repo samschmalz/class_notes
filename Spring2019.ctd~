@@ -19,7 +19,7 @@ Point Breakdown:
 
 </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 24" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548344330.02" ts_lastsave="1548346478.43" unique_id="5">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Jan 24" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548344330.02" ts_lastsave="1548775698.47" unique_id="5">
 			<rich_text>Previous historical records
 • very biased
 • ignore existence of native populations
@@ -88,6 +88,66 @@ Continental US Natives
    ◇ built houses into the sides of rock mesas
    ◇ used pictograms for writing
       ▪ not as precise as proper writing</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1548778601.08" unique_id="7">
+			<rich_text>How did colonialism begin?
+• </rich_text>
+			<rich_text underline="single">colonialism</rich_text>
+			<rich_text> - the conquest and control of other people's land and goods with ties to the parent state
+• Out of the Ashes
+   ◇ Plague (1347-1351)
+      ▪ 60% death rate
+• redistribution of wealth
+   ◇ chinese gunpowder
+
+Age of Exploration
+• new technology makes sailing easier
+   ◇ lanteen sails
+• Portugal
+   ◇ Prince Henry the Navigator
+   ◇ Bartholomeu Dias
+   ◇ Vasco de Gama
+   ◇ Plantation systems
+• Spain
+   ◇ Rulers: Ferdinand and Isabella
+   ◇ Christopher Colombus
+      ▪ already knew that world is </rich_text>
+			<rich_text underline="single">not</rich_text>
+			<rich_text> flat
+      ▪ thinks he can make it to India by going west
+         - thought world is smaller than it really is
+   ◇ Pope Alexander VI
+      ▪ set demarcation lines to divide control between Spain and Portugal
+      ▪ tells both nations to spread Catholicism
+
+God, Gold, and Glory
+• Cortes conquers Mexico, 1519-1521
+• Pizarro conquers Peru, 1532-1534
+• Queen Isabella funds expeditions
+   ◇ King Ferdinand focused more on extracting wealth
+   ◇ Queen had more focus on spreading Catholic beliefs
+• Conquistadors
+   ◇ motivated by stories of cities of gold
+   ◇ gold was given as welcome gift or tribute
+      ▪ tribes thought it owuld cause Spanish to go away
+   ◇ Spanish thought there would be more gold available
+   ◇ Encomienda system
+      ▪ gift of land to particular conquistador once area has been conquered
+      ▪ later became un-inheritable, removing motivation to care for land
+         - much more limited time, want to take all they can
+• Bartolome de Las Casas
+   ◇ saddened by the current state of the conquest
+      ▪ de Las Casas is more motivated by God, saddened by lust for gold
+   ◇ becomes priest and tries to convert natives
+   ◇ returns to Spain and asks for limits on how conquistadors can act
+      ▪ Ferdinand disagrees
+   ◇ Creates repartimiento system
+
+
+Spain Superimposed
+• conquest keeps going
+   ◇ take over cities, temples, buildings, etc
+   ◇ Incan road system already in place</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -242,7 +302,7 @@ fib(n+2) = fib(n) + fib(n+1)</codebox>
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1548707974.27" unique_id="6">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1548708457.24" unique_id="6">
 			<rich_text>Correctness Proofs
 • people do not fully understand an algorithm until they are able to prove its correctness
 • therefore, we shall
@@ -250,7 +310,10 @@ fib(n+2) = fib(n) + fib(n+1)</codebox>
 
 Correctness of Iterative Algorithms
 • given loop invariant, must prove
-   ◇ </rich_text>
+   ◇ Initialization: invariant holds before first iteration
+   ◇ maintenance: if invariant holds at beginning of an iteration, must also hold at end
+   ◇ termination: the loop always exits
+   ◇ correctness: loop invariant, together w/ exit condition, implies desired correctness property</rich_text>
 		</node>
 	</node>
 </cherrytree>
