@@ -89,7 +89,7 @@ Continental US Natives
    ◇ used pictograms for writing
       ▪ not as precise as proper writing</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1548778380.47" unique_id="7">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1548778716.51" unique_id="7">
 			<rich_text>How did colonialism begin?
 • </rich_text>
 			<rich_text underline="single">colonialism</rich_text>
@@ -141,7 +141,14 @@ God, Gold, and Glory
    ◇ becomes priest and tries to convert natives
    ◇ returns to Spain and asks for limits on how conquistadors can act
       ▪ Ferdinand disagrees
-   ◇ Creates repartimiento system</rich_text>
+   ◇ Creates repartimiento system
+
+
+Spain Superimposed
+• conquest keeps going
+   ◇ take over cities, temples, buildings, etc
+   ◇ Incan road system already in place
+• caste system created</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -296,7 +303,7 @@ fib(n+2) = fib(n) + fib(n+1)</codebox>
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1548708457.24" unique_id="6">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1548882217.34" unique_id="6">
 			<rich_text>Correctness Proofs
 • people do not fully understand an algorithm until they are able to prove its correctness
 • therefore, we shall
@@ -307,7 +314,36 @@ Correctness of Iterative Algorithms
    ◇ Initialization: invariant holds before first iteration
    ◇ maintenance: if invariant holds at beginning of an iteration, must also hold at end
    ◇ termination: the loop always exits
-   ◇ correctness: loop invariant, together w/ exit condition, implies desired correctness property</rich_text>
+   ◇ correctness: loop invariant, together w/ exit condition, implies desired correctness property
+
+
+Iterative InsertionSort
+• still rely on InsertLast
+• Specification:
+   ◇ PRE: A[1..n]
+   ◇ POST: A[1..n] s.t. it is non-decreasing
+• Loop invariant: A[1..n] is a permutation of original values s.t. A[1..i-1] is non-decreasing
+
+InsertionSort, Inner Loop
+• Spec:
+   ◇ PRE: A[1..n] is an array of numbers and i with 1 &lt;= i &lt;= n s.t. A[1..i-1] is non-decreasing
+   ◇ POST: A[1..n] is permutation of original values s.t. A[1..i] is non-decreasing
+• code:
+   ◇ </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+• Tentative invariant:
+   ◇ A[1..n] is permutation of original values
+   ◇ A[1..j-1] and A[j..i] are both non-decreasing
+• invariant does hold, and can show
+   ◇ initialization
+   ◇ correctness
+   ◇ but </rich_text>
+			<rich_text style="italic" underline="single">not</rich_text>
+			<rich_text> maintenance</rich_text>
+			<codebox char_offset="997" frame_height="63" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">j ← i
+while j &gt; 1 and A[j] &lt; A[j - 1]:
+    A[j] ↔ A[j-1]; j ← j-1</codebox>
 		</node>
 	</node>
 </cherrytree>
