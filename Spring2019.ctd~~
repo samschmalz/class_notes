@@ -89,7 +89,7 @@ Continental US Natives
    ◇ used pictograms for writing
       ▪ not as precise as proper writing</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1548778716.51" unique_id="7">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1548952074.67" unique_id="7">
 			<rich_text>How did colonialism begin?
 • </rich_text>
 			<rich_text underline="single">colonialism</rich_text>
@@ -148,7 +148,85 @@ Spain Superimposed
 • conquest keeps going
    ◇ take over cities, temples, buildings, etc
    ◇ Incan road system already in place
-• caste system created</rich_text>
+• caste system created
+
+
+Spain in North America
+• bulk of Spanish influence is in southern regions
+• Had some influence in continental US
+   ◇ Florida (1513)
+      ▪ established as military base
+      ▪ ships could stop to resupply between Spain and Mexico
+   ◇ New Mexico (1598)
+      ▪ Acoma Pueblo
+      ▪ natives tried to push back, Spanish responded more violently
+• Assumed that people would stay after conquest
+
+
+France: Fish, Fur, and Faith
+• more commercial venture than Spanish
+   ◇ most people coming through are explorers, traders, and trappers
+• looking for Northwest Passage that will take people through North America
+   ◇ still trying to get to the East Indies
+• Developed “Middle Ground”
+   ◇ alliance with Algonquin people
+   ◇ mutual and reciprocal relationship
+   ◇ French relied more on native guides
+   ◇ intermarriage became common among French
+      ▪ no French societies to emulate, often became part of indiginous populations
+      ▪ would sometimes just go back to France and abandon native wives
+• Much smaller population of explorers
+   ◇ about 3000 people in entire Louisiana purchase and French Canada
+
+
+Dutch Exploration
+• Still looking for Northwest Passage
+   ◇ led to fame of Henry Hudson, who explored the Hudson river
+• New Amsterdam
+   ◇ purchased rather than conquered
+      ▪ paid native peoples in the area for the land
+      ▪ probably didn't pay what the land was worth
+   ◇ eventually sold to the Duke of York, became New York eventually
+• Diverse settlement
+
+
+Where were the English?
+• most likely due to political and religious turmoil
+• Mercantilism caused more turmoil
+   ◇ balance of wealth in Europe was shifting dramatically
+
+
+Dissent Abroad and Within
+• England worried about spain
+   ◇ commonly fight between the two nations
+   ◇ both sides employed privateers
+   ◇ Queen Elizabeth sends Sir Walter Raleigh
+      ▪ searches for realm of El Dorado
+• Defeat of Spanish Armada
+   ◇ bad weather causes armada to go down
+   ◇ Spain loses ability to defend itself
+
+Founding Virginia
+• Virginia company
+   ◇ founded Jamestown in 1607
+   ◇ created expedition of 104 settlers
+      ▪ includes a lot of goldsmiths and jewelers
+      ▪ majority men
+• John Smith
+• Powhatan Confederacy
+• Pocahontas
+   ◇ Disney movie presents it as love story between Pocahontas and John Smith
+   ◇ Reality is different
+      ▪ Pocahontas was likely around 11 or 12
+      ▪ John Smith was closer to 30
+      ▪ Possibly a setup by Powhatan to demonstrate mercy without losing power
+• John Rolfe
+   ◇ Pocahontas is contractually required to marry to earn freedom
+      ▪ Pocahontas dies at age of 21-ish
+      ▪ away from friends and family
+      ▪ using the name “Rebecca”
+   ◇ later introduces tobacco to Virginia
+      ▪ the one resource England had that was sellable</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -303,7 +381,7 @@ fib(n+2) = fib(n) + fib(n+1)</codebox>
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1548882348.26" unique_id="6">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1549055429.99" unique_id="6">
 			<rich_text>Correctness Proofs
 • people do not fully understand an algorithm until they are able to prove its correctness
 • therefore, we shall
@@ -341,10 +419,46 @@ InsertionSort, Inner Loop
    ◇ but </rich_text>
 			<rich_text style="italic" underline="single">not</rich_text>
 			<rich_text> maintenance
-• invariant is too weak</rich_text>
+• invariant is too weak
+• new invariant:
+   ◇ A[1..n] is a permutation of its original values s.t. for all 1 &lt;= k &lt; k' &lt;= i, if k' != j then A[k] &lt;= A[k']
+
+
+Correctness of Recursive Algorithms
+• Want to prove correctness of recursive function
+   ◇ called with arg of “size” n
+• need to analyze the body
+   ◇ to keep analysis manageable must be able to assume that each subcall gives correct result
+   ◇ let i be the “size” of the arg to subcall
+   ◇ then expect that i &lt; n
+• can tgys aooeak ti mathematical induction
+
+Recursive FindLast
+• spec
+   ◇ PRE: x ∈ A[1..n] (thus n &gt;= 1)
+   ◇ POST: returns p ∈ 1..n: A[p] = x ∉ A[p + 1..n]
+• </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+Recursive InsertLast
+• New prove correctness of InsertLast
+• spec
+   ◇ PRE: A[1..n] with n &gt;= 1 is array of numbers s.t. A[1..n-1] is non-decreasing
+   ◇ POST: A[1..n] is a permutation of its original values s.t. it is non-decreasing
+• </rich_text>
 			<codebox char_offset="997" frame_height="63" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">j ← i
 while j &gt; 1 and A[j] &lt; A[j - 1]:
     A[j] ↔ A[j-1]; j ← j-1</codebox>
+			<codebox char_offset="1852" frame_height="90" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">FindLast(A,n,x)
+    if A[n] = x
+        return n
+    else
+        return FindLast(A,n-1,x)</codebox>
+			<codebox char_offset="2091" frame_height="60" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">InsertLast(A[1..n])
+    if n &gt; 1 and a[n] &lt; A[n-1]
+        A[n] ↔ A[n-1]
+        InsertLast(A[1..n-1]</codebox>
 		</node>
 	</node>
 </cherrytree>
