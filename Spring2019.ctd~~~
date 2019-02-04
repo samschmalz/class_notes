@@ -381,7 +381,7 @@ fib(n+2) = fib(n) + fib(n+1)</codebox>
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1549055397.08" unique_id="6">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548707832.88" ts_lastsave="1549312372.03" unique_id="6">
 			<rich_text>Correctness Proofs
 • people do not fully understand an algorithm until they are able to prove its correctness
 • therefore, we shall
@@ -445,7 +445,9 @@ Recursive InsertLast
 • New prove correctness of InsertLast
 • spec
    ◇ PRE: A[1..n] with n &gt;= 1 is array of numbers s.t. A[1..n-1] is non-decreasing
-   ◇ POST: A[1..n] is a permutation of its original values s.t. it is non-decreasing</rich_text>
+   ◇ POST: A[1..n] is a permutation of its original values s.t. it is non-decreasing
+• </rich_text>
+			<rich_text justification="left"></rich_text>
 			<codebox char_offset="997" frame_height="63" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">j ← i
 while j &gt; 1 and A[j] &lt; A[j - 1]:
     A[j] ↔ A[j-1]; j ← j-1</codebox>
@@ -454,6 +456,64 @@ while j &gt; 1 and A[j] &lt; A[j - 1]:
         return n
     else
         return FindLast(A,n-1,x)</codebox>
+			<codebox char_offset="2091" frame_height="75" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">InsertLast(A[1..n])
+    if n &gt; 1 and a[n] &lt; A[n-1]
+        A[n] ↔ A[n-1]
+        InsertLast(A[1..n-1])</codebox>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Asymptotic Notation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312372.03" ts_lastsave="1549313370.9" unique_id="10">
+			<rich_text>
+What do we mean by Running Time?
+• algorithm has running time f(n) may mean that
+   ◇ for all inputs of “size” n, it takes at most f(n)
+      ▪ thus f is upper bound
+   ◇ for all inputs, it takes at least f(n)
+      ▪ thus f is lower bound
+   ◇ there exists some input of size n on which it takes time at least f(n)
+      ▪ thus cannot get better upper bound than f(n)
+   ◇ considering all inputs of size n, average time is f(n)
+      ▪ requires probability distribution
+
+Succinct Representation
+• often calculate running time by some complex equation
+   ◇ e.g. 4n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> + 7n + 8
+• in the long run, what matters is the quadratic factor
+   ◇ other parts of the equation rarely have a meaningful contribution in large sets
+   ◇ will suffice to write O(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>) or Θ(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>)
+• in the following we will only consider functions
+   ◇ from natural numbers (# of bits in input)
+   ◇ to non-negative real numbers (running time in ms, space use in MB, etc)
+• our choices of unit do not matter
+
+Big-O Notation
+• definition:
+   ◇ f ∈ O(g) iff exists c &gt; 0 and n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text> &gt;= 0 s.t. for all n with n &gt;= n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>, f(n) &lt;= cg(n)
+   ◇ note: f is a function, O(g) is a </rich_text>
+			<rich_text style="italic">set</rich_text>
+			<rich_text> of functions
+      ▪ is common abuse of notation to say f = O(g)
+• interpretation:
+   ◇ algorithm has running time in O(g) iff exists f ∈ O(g) s.t. for all n, and all input of size n, running time is at most f(n)</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Project Ideas" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312306.02" ts_lastsave="1549314240.65" unique_id="9">
+			<rich_text>
+RPi Cluster
+• Use Zeroes with OTG networking
+   ◇ have to script the config changes before booting SD cards
+      ▪ use udisks to detect new SD card?</rich_text>
 		</node>
 	</node>
 </cherrytree>
