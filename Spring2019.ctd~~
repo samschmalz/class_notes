@@ -89,7 +89,7 @@ Continental US Natives
    ◇ used pictograms for writing
       ▪ not as precise as proper writing</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1548952074.67" unique_id="7">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Exploration and Empire in South America" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1548775698.48" ts_lastsave="1549380735.33" unique_id="7">
 			<rich_text>How did colonialism begin?
 • </rich_text>
 			<rich_text underline="single">colonialism</rich_text>
@@ -227,6 +227,112 @@ Founding Virginia
       ▪ using the name “Rebecca”
    ◇ later introduces tobacco to Virginia
       ▪ the one resource England had that was sellable</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Models of Colonial Control" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549380735.33" ts_lastsave="1549383754.38" unique_id="11">
+			<rich_text>
+Making a Living
+• wasn't much incentive
+   ◇ many people didn't live long
+   ◇ tobacco farms needed workers
+• Headright system
+   ◇ would be given 50 acres per person
+• Indentured servants
+   ◇ passage to new world paid for
+   ◇ eventually given land after working off debt
+   ◇ essential to life in Chesapeake region
+   ◇ not restricted by race, but by class
+• Rough Living
+   ◇ large disparity between upper and lower classes
+      ▪ women were </rich_text>
+			<rich_text style="italic">very</rich_text>
+			<rich_text> uncommon
+      ▪ Virginia Company starts paying women to come to the colonies
+   ◇ roughly 80% of Jamestown settlers died
+   ◇ easy to abuse intentured servitude
+      ▪ masters could petition courts to extend your service
+
+
+Puritan New England
+• More religious motivation
+   ◇ Persecution from Church of England
+      ▪ believed that anyone can foster their own spiritual relationships
+   ◇ more homogeneous in nature
+      ▪ less mixing between social classes
+      ▪ religious groups put community over individuals
+• Natives
+   ◇ Wampanoag
+      ▪ hit by disease just before Puritans arrived
+      ▪ much weaker fighting force
+   ◇ Massasoit
+      ▪ chief of Wampanoag
+      ▪ willing to wait to see what the Puritans do
+   ◇ Squanto
+      ▪ had been captured by british settlers before
+      ▪ sent to England as a slave, learns English language
+      ▪ convinces English to send him home as a translator
+• Large-scale migration
+   ◇ entire community traveled together
+
+
+Living as a Puritan
+• Great Migration from 1629-1642
+   ◇ total of ~21,000 pilgrims
+   ◇ most in a very concentrated area
+   ◇ took very few servants
+• Bible Commonwealth
+   ◇ “city upon a hill”
+      ▪ trying to build a theocracy
+      ▪ arguably less religious tolerance
+   ◇ natural population builds due to whole families coming over
+   ◇ John Withrop
+      ▪ governor of Massachusetts
+   ◇ most democratic of new world organizations
+      ▪ required to be a man and a church member to vote
+• Plain Style
+   ◇ buildings, clothes, speech
+      ▪ no stained glass, very few bright colors
+      ▪ no extravagance
+   ◇ extremely conservative gender roles
+      ▪ very odd female baby names
+         - patience, prudence, silence, fear, hope, BeFruitful
+• Anne Hutchinson
+   ◇ example of Puritan values in action
+   ◇ arrives in 1634 at the age of 43
+      ▪ well-educated, father was a clergyman
+      ▪ had 15 children before arriving
+   ◇ Antinomianism
+      ▪ splinter sect of the Church
+      ▪ goes against Predestination
+         - teaches pre-grace (in a way)
+      ▪ holds meetings in her home to teach others
+         - rumors break out that she is hosting mixed-gender meetings
+      ▪ eventually taken to trial
+         - determined that she is radical and should be banished from the colony
+
+
+Quakers
+• Arrive in 1682
+   ◇ Led by William Penn
+   ◇ Also dissenting group from England
+   ◇ original formed a group called the Friends
+      ▪ believed that religious heirarchy wasn't necessary
+         - refused to tip their hat to “higher” social/religious figures
+      ▪ believed that all had the potential to lead their relationship
+      ▪ known pacifists
+   ◇ changed bartering practices
+      ▪ wanted fixed rate for everyone
+         - same price regardless of quantity or person
+
+
+The Carolinas
+• Originally one large chunk of land
+• Land given to supporters of Charles II
+• Had connection to Caribbean
+   ◇ men from islands came to Carolinas
+   ◇ brought slaves with them
+      ▪ African majority (4x as many slaves as landowners)
+      ▪ immediate fear of results
+• </rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -461,7 +567,7 @@ while j &gt; 1 and A[j] &lt; A[j - 1]:
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Asymptotic Notation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312372.03" ts_lastsave="1549314274.71" unique_id="10">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Asymptotic Notation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312372.03" ts_lastsave="1549487459.25" unique_id="10">
 			<rich_text>
 What do we mean by Running Time?
 • algorithm has running time f(n) may mean that
@@ -506,18 +612,99 @@ Big-O Notation
    ◇ algorithm has running time in O(g) iff exists f ∈ O(g) s.t. for all n, and all input of size n, running time is at most f(n)
 • threshold rule: in above definition, may omit the part concerning n</rich_text>
 			<rich_text scale="sub">0</rich_text>
-			<rich_text> (assuming g is strictly positive)</rich_text>
+			<rich_text> (assuming g is strictly positive)
+
+Properties of O-relation
+• relation “f ∈ O(g)” is
+   ◇ reflexive: f ∈ O(f)
+   ◇ transitive: if f ∈ O(g) and g ∈ O(h) then f ∈ O(h)
+
+Limit Property
+• A sufficient condition for f ∈ O(g) is that there exists c with 0 &lt;= c &lt; infinity s.t. lim(n-&gt;inf) { f(n)/g(n) } = c
+• Ex: O(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>) = O(4n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> + 7n + 9)
+• a limit is not a necessary condition
+   ◇ f(n) = 2</rich_text>
+			<rich_text scale="sup">[lg n]</rich_text>
+			<rich_text>; g(n) = 2</rich_text>
+			<rich_text scale="sup">lg n</rich_text>
+			<rich_text>
+
+Big-Omega Notation
+• dual to Big-O
+   ◇ f ∈ Ω(g) iff g ∈ O(f)
+• That is, f ∈ Ω(g) iff exists c &gt; 0 and n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text> s.t. for all n &gt;= n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>, g(n) &lt;= cf(n)
+
+Interpretation of Ω Relation
+• What does it mean that alg has running time in Ω(g)?
+   ◇ all - there exists f ∈ Ω(g) s.t. for all n, and all input of size n, running time is at least f(n)
+   ◇ some - exists f ∈ Ω(g) s.t. for all n there is some input (worst case) of size n s.t. running time is at least f(n)
+• Is Insertion sort in Ω(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>)?
+   ◇ according to some (worst case), Yes
+   ◇ according to all, No
+• Insertion sort is always in Ω(n)
+
+
+Big-Theta
+• say that f ∈ Θ iff f ∈ O(g) and f ∈ Ω(g)
+• That is, exists c</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>, c</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text> s.t. (from a certain point) f(n) is “sandwiched” between c</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>g(n) and c</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text>g(n)
+
+Standard Usage
+• will typically consider worst-case running time
+• thus, Insertion sort is
+   ◇ in Θ(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>)
+   ◇ in Ω(g)
+
+
+Little-o, Little-omega
+• Little-o: we say f ∈ o(g) iff for all real c &gt; 0 exists n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text> s.t. for all n with n &gt;= n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>, f(n) &lt; cg(n)</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
 		<rich_text></rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Project Ideas" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312306.02" ts_lastsave="1549314247.88" unique_id="9">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Project Ideas" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312306.02" ts_lastsave="1549317713.47" unique_id="9">
 			<rich_text>
 RPi Cluster
 • Use Zeroes with OTG networking
    ◇ have to script the config changes before booting SD cards
       ▪ use udisks to detect new SD card?
-   ◇ </rich_text>
+   ◇ set up DNS and DHCP entries for each Pi
+• running services
+   ◇ ask if DNS/DHCP on Zeroes or Pi3
+   ◇ ask if want k8s or Docker Swarm
+• updates
+   ◇ automated updates if desired
+   ◇ simultaneous updates using tmux script
+   ◇ ansible?
+• job scheduling?
+   ◇ check for k8s and docker capabilities
+   ◇ use something similar to slurm
+      ▪ Check Apache Mesos
+         - </rich_text>
+			<rich_text link="webs https://mesos.apache.org">https://mesos.apache.org</rich_text>
 		</node>
 	</node>
 </cherrytree>
