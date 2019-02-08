@@ -228,7 +228,7 @@ Founding Virginia
    ◇ later introduces tobacco to Virginia
       ▪ the one resource England had that was sellable</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Models of Colonial Control" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549380735.33" ts_lastsave="1549383754.38" unique_id="11">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Models of Colonial Control" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549380735.33" ts_lastsave="1549553340.51" unique_id="11">
 			<rich_text>
 Making a Living
 • wasn't much incentive
@@ -333,6 +333,102 @@ The Carolinas
       ▪ African majority (4x as many slaves as landowners)
       ▪ immediate fear of results
 • </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Uprisings and Social Hierarchies" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549553340.52" ts_lastsave="1549556348.61" unique_id="12">
+			<rich_text>
+From Conversion to Massacre
+• Christians believed they were more important
+• “prayer towns”
+   ◇ required to be Christian to stay in the town
+   ◇ “converted” natives from their traditional lifestyle
+   ◇ believed you couldn't be Christian and traditionally native
+• Pequot Wars
+   ◇ same area as Wampanoag
+   ◇ trader in 1637 dies violently, nobody knows how or by whom
+      ▪ Puritans decide Pequot were responsible w/ little evidence
+      ▪ Men go to large city (Mystic) and light structures on fire
+         - cause several hundred deaths
+      ▪ Capture survivors, enslave them, send them away
+   ◇ fall of Mystic opens large area for colonists
+      ▪ remaining natives realized current life could be problematic
+
+
+King Philip/Metacom's War (1676)
+• Metacom
+   ◇ chief of Wampanoag tribe
+   ◇ son of Massasoit, leader who helped the Puritans upon arrival
+   ◇ called “Philip” by colonists
+   ◇ allies himself with other tribes
+      ▪ try to force colonists out via guerilla warfare
+• Raid of New England
+   ◇ kill 5000 people
+      ▪ didn't really care who was who
+   ◇ dismember Metacom and put head on pike
+   ◇ put survivors into slavery and sold to west indies
+
+
+Bacon's Rebellion (1675)
+• Bringing indentured servants over
+   ◇ wealthy get 50 acres of land per servant
+   ◇ long-term profit to pay for servants
+   ◇ both European and African
+      ▪ supposed to eventually free them
+   ◇ people stopped dying of disease, survived long enough to end servitude
+      ▪ causes too many people to come into the colonies
+      ▪ creates an urban poor class
+         - no land, but still want to work
+• Nathaniel Bacon v. Sir William Berkeley
+   ◇ Berkeley was governor of the area
+      ▪ raised taxes to help English fight the Dutch
+      ▪ trade goes down because of war
+         - English forbidden to use Dutch ships, fewer ships available
+   ◇ Nathanial Bacon
+      ▪ young lawyer, related to governor
+      ▪ assumes that he'll get land and a fortune when he comes over
+      ▪ ends up at bottom of totem pole
+      ▪ decides he wants a chance at success
+   ◇ Revolt
+      ▪ Bacon wants to become governor and make changes
+      ▪ Berkeley can't use militia to clear new land
+         - has economic and military reasons not to
+      ▪ Bacon gathers lower class members, creates list of demands
+      ▪ Berkeley refuses demands, revolt burns Jamestown to the ground
+      ▪ Berkeley flees, Bacon acts as governor
+         - Bacon dies of dysentery, Berkeley re-establishes control
+         - revolt falls apart without Bacon as a focal point
+• Repercussions
+   ◇ slave status becomes inheritable
+      ▪ if parent was slave, you're born as a slave
+   ◇ African servants no longer freed
+   ◇ White servants now given better chance
+      ▪ distinction is no longer about class, but about race
+   ◇ Fear of landless masses
+      ▪ no real opportunities for males without land
+         - failure viewed as solely your fault
+         - women and children often taken care of
+      ▪ no services like schools or charities, like Puritans in the north have
+
+
+Pueblo Revolt (New Mexico, 1680)
+• first successful uprising against colonization
+• Popé
+   ◇ captured by Spanish
+   ◇ radicalized by the experience
+   ◇ wants all Spanish out
+      ▪ all animals, tools, etc
+   ◇ builds coalition to fight against Spanish
+      ▪ kill about 400 people
+      ▪ push Spanish to El Paso for about 12 years
+
+
+Growing Interest
+• Charles II restored to power (1660)
+   ◇ fighting within England and with Dutch is over
+   ◇ more interest in trading outside of England
+• Mercantilism
+   ◇ idea that there is limited wealth in the world
+• Navigational Acts (1660-1715)
+   ◇ everything goes through London</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -567,7 +663,7 @@ while j &gt; 1 and A[j] &lt; A[j - 1]:
         A[n] ↔ A[n-1]
         InsertLast(A[1..n-1])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Asymptotic Notation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312372.03" ts_lastsave="1549487250.26" unique_id="10">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Asymptotic Notation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549312372.03" ts_lastsave="1549658982.13" unique_id="10">
 			<rich_text>
 What do we mean by Running Time?
 • algorithm has running time f(n) may mean that
@@ -672,7 +768,71 @@ Standard Usage
    ◇ in Θ(n</rich_text>
 			<rich_text scale="sup">2</rich_text>
 			<rich_text>)
-   ◇ in Ω(g)</rich_text>
+   ◇ in Ω(g)
+
+
+Little-o, Little-omega
+• Little-o: we say f ∈ o(g) iff for all real c &gt; 0 exists n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text> s.t. for all n with n &gt;= n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>, f(n) &lt; cg(n)
+• Equivalently: f  ∈  o(g) iff
+   ◇ lim(n-&gt;inf) { f(n) / g(n) } = 0
+• says that f grows slower than g
+• Little-omega: we say f ∈ ω(g) iff g ∈ o(f)
+
+Comparisons
+n</rich_text>
+			<rich_text scale="sup">p</rich_text>
+			<rich_text> ∈ X(n</rich_text>
+			<rich_text scale="sup">q</rich_text>
+			<rich_text>) iff p __ q
+</rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+Relating little-o to Big-O
+• o(g) ⊆ O(g) \ Θ(g)
+• </rich_text>
+			<table char_offset="2985" col_max="120" col_min="40">
+				<row>
+					<cell>o</cell>
+					<cell>&lt;</cell>
+				</row>
+				<row>
+					<cell>O</cell>
+					<cell>&lt;=</cell>
+				</row>
+				<row>
+					<cell>Θ</cell>
+					<cell>=</cell>
+				</row>
+				<row>
+					<cell>Ω</cell>
+					<cell>&gt;=</cell>
+				</row>
+				<row>
+					<cell>ω</cell>
+					<cell>&gt;</cell>
+				</row>
+				<row>
+					<cell>X</cell>
+					<cell>__</cell>
+				</row>
+			</table>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Iterative Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549658982.13" ts_lastsave="1549659116.93" unique_id="13">
+			<rich_text>
+Outline
+• will develop techniques for analyzing the running time of a program built w/ loops, conditionals, and assignments
+   ◇ postponing recursion
+   ◇ assume assignments take constant time
+• agenda:
+   ◇ motivate and state a general theorem that is widely applicable to (nested) loops
+
+
+</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
