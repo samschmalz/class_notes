@@ -822,7 +822,7 @@ Relating little-o to Big-O
 				</row>
 			</table>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Iterative Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549658982.13" ts_lastsave="1549659334.61" unique_id="13">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Iterative Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549658982.13" ts_lastsave="1549918133.63" unique_id="13">
 			<rich_text>
 Outline
 • will develop techniques for analyzing the running time of a program built w/ loops, conditionals, and assignments
@@ -833,7 +833,59 @@ Outline
 
 
 Analyze Loops by Estimating Sums
-• running time of an iterative construct can be expressed as sum of the form sum(i=1 -&gt; g(n)) { f(i) }</rich_text>
+• running time of an iterative construct can be expressed as sum of the form sum(i=1 -&gt; g(n)) { f(i) }
+   ◇ g(n) can be something like n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+   ◇ f(i) is the function explicitly within the loop
+
+
+Upper Estimates
+• It is easy to see that T</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>(n) ∈ O(n</rich_text>
+			<rich_text scale="sup">8</rich_text>
+			<rich_text>)
+
+
+Lower Estimates
+• Upper asymptotic bounds are often also lower bounds
+• Pitfall
+   ◇ recall conjecture: sum(i=1 -&gt; g(n)) { f(i) ∈ Θ(g(n) * f(g(n))) }
+   ◇ with g(n) = n and f(i) = 2</rich_text>
+			<rich_text scale="sup">i</rich_text>
+			<rich_text>
+
+
+Smooth Functions
+• a non-decreasing function f is smooth if there exists c and n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text> s.t. for all n (with n &gt;= n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>):
+   ◇ f(2n) &lt;= cf(n)
+   ◇ f(n) = n is smooth
+   ◇ being smooth is closed under various operations, like addition and multiplication
+• thus all polynomials are smooth (if positive coefficients)
+   ◇ f(n) = 2</rich_text>
+			<rich_text scale="sup">n</rich_text>
+			<rich_text> is </rich_text>
+			<rich_text underline="single">not</rich_text>
+			<rich_text> smooth since f(2n) = 2</rich_text>
+			<rich_text scale="sup">2n</rich_text>
+			<rich_text> = (2</rich_text>
+			<rich_text scale="sup">n</rich_text>
+			<rich_text>)</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> = f(n)</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+
+
+Key Result
+• let X be O, Θ, or Ω.  Assume that T(n) = sum(i=1 -&gt; g(n)) { h(i) }
+   ◇ where h ∈ X(f)
+• can write T(n) ∈ sum(i=1 -&gt; g(n)) { X(f(i)) }</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
