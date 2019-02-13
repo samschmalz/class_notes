@@ -334,7 +334,7 @@ The Carolinas
       ▪ immediate fear of results
 • </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Uprisings and Social Hierarchies" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549553340.52" ts_lastsave="1549556348.61" unique_id="12">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Uprisings and Social Hierarchies" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549553340.52" ts_lastsave="1549985247.64" unique_id="12">
 			<rich_text>
 From Conversion to Massacre
 • Christians believed they were more important
@@ -429,6 +429,54 @@ Growing Interest
    ◇ idea that there is limited wealth in the world
 • Navigational Acts (1660-1715)
    ◇ everything goes through London</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Colonial Life" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549985247.65" ts_lastsave="1549987987.45" unique_id="14">
+			<rich_text>
+Impact of African Slave Trade
+• slavery is not new to Americas
+   ◇ formerly class was determined by class
+• In Africa
+   ◇ slaves had well-defined rights
+      ▪ often POWs
+      ▪ not slaves for life
+      ▪ not transferable
+
+
+Changes in the Law
+• 1662: opens up slave women to bear burden of rape with benefits for slave owner
+• 1667: baptism of slaves does not exempt them from bondage
+• 1669: owners not punished for murder if they accidentally kill a slave through harsh punishment
+• 1670: no negros nor indians can buy christian servants
+• 1691: banish white man or woman who marries black, mulatto, or indian
+• 1705: legal to dismember unruly slaves
+
+
+Growth in the Colonies
+• 1700: quarter-million people
+   ◇ 1775: 2.5 million people
+• most immigrants were not English
+   ◇ Germans, French, Dutch made large part of population
+• number of slaves doubled as well
+
+
+Families
+• few women remained unmarried
+   ◇ problem with indentured servants
+   ◇ indentured servants can't get married
+• childbearing
+   ◇ average of 8
+   ◇ most frequent cause of death for women
+• medicine
+   ◇ 4 humors: yellow bile, black bile, blood, phlegm
+
+
+Salem
+• witch trials
+   ◇ often thought of in a silly way today
+   ◇ very dangerous time, especially for unmarried women
+• absurd trials
+   ◇ 4-year-old imprisoned
+   ◇ 80-year-old woman also accused</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -822,7 +870,7 @@ Relating little-o to Big-O
 				</row>
 			</table>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Iterative Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549658982.13" ts_lastsave="1549918070.35" unique_id="13">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Iterative Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549658982.13" ts_lastsave="1550092277.35" unique_id="13">
 			<rich_text>
 Outline
 • will develop techniques for analyzing the running time of a program built w/ loops, conditionals, and assignments
@@ -883,7 +931,87 @@ Smooth Functions
 
 
 Key Result
-• let X be O, Θ, or Ω.  Assume that T(n) = sum(i=1 -&gt; g(n)) { h(i) }</rich_text>
+• let X be O, Θ, or Ω.  Assume that T(n) = sum(i=1 -&gt; g(n)) { h(i) }
+   ◇ where h ∈ X(f)
+• can write T(n) ∈ sum(i=1 -&gt; g(n)) { X(f(i)) }
+• if f is smooth (non-decreasing) then
+   ◇ T(n) ∈ X(g(n) * f(g(n)))
+• to apply, may need to rename so loop starts at 1
+
+
+What is an Elementary Instruction
+• recall iterative fibonacci function
+   ◇ may naively think it runs in linear time
+   ◇ in k'th iteration add Θ(k)-bit numbers so running time is rather Θ(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>)
+• for most programs can safely assume that assignments execute in constant time
+
+
+Barometer Instructions
+• executed that gets executed at least as often as any other instruction
+   ◇ can be used to estimate total running time
+   ◇ estimate number of times barometer instruction is executed</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Recursive Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550092277.35" ts_lastsave="1550092675.37" unique_id="15">
+			<rich_text>
+Assume recursive calls have one less parameter:
+• </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+• if S</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>, S</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text> has cost h(n) then F has cost given by g(n) = h(n) + g(n-1)
+• thus we get g(n) = sum(i=1 -&gt; n) { h(i) }
+   ◇ we have seen how to handle this
+
+
+Divide and Conquer Paradigm
+• Spec:
+   ◇ PRE: A[1..n] is array of numbers, n &gt;= 1
+   ◇ POST: A[1..n] is sorted permutation of initial values
+• </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+• Merge:
+   ◇ spec:
+      ▪ PRE: A</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>, A</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text> are sorted arrays
+      ▪ POST: returns sorted permutation of elements in A</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>, A</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text>
+   ◇ Merge(A</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>[1..n</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>],A</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text>[1..n</rich_text>
+			<rich_text scale="sub">2</rich_text>
+			<rich_text>])
+   ◇ running time: Θ(n) w.r.t. time and space
+      ▪ MergeSort is not “in-place”</rich_text>
+			<codebox char_offset="51" frame_height="120" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">F(A[1..n])
+    if n = 1
+        return ...
+    else
+        S1
+        F(A[1..n-1])
+        S2</codebox>
+			<codebox char_offset="351" frame_height="120" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">MergeSort(A[1..n])
+    if n &gt; 1
+        m &lt;- [n/2]
+        MergeSort(A[1..m])
+        MergeSort(A[m+1..n])
+        B[1..n] &lt;- Merge(A[1..m],A[m+1..n])
+        Copy(B[1..n],A[1..n])</codebox>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
