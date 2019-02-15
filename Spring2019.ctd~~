@@ -953,7 +953,7 @@ Barometer Instructions
    ◇ can be used to estimate total running time
    ◇ estimate number of times barometer instruction is executed</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Recursive Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550092277.35" ts_lastsave="1550092706.74" unique_id="15">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Recursive Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550092277.35" ts_lastsave="1550264068.03" unique_id="15">
 			<rich_text>
 Assume recursive calls have one less parameter:
 • </rich_text>
@@ -998,7 +998,41 @@ Divide and Conquer Paradigm
 			<rich_text>])
    ◇ running time: Θ(n) w.r.t. time and space
       ▪ MergeSort is not “in-place”
-         - doesn't take constant space</rich_text>
+         - doesn't take constant space
+   ◇ time recurrence
+      ▪ T(n) ∈ 2T(n/2) + Θ(n)
+      ▪ Solution: T(n) ∈ Θ(n lg n)
+   ◇ space recurrence
+      ▪ space can be reused
+      ▪ S(n) ∈ S(n/2) + Θ(n)
+
+
+Substitution Method
+• address how to solve a recurrence such as T(n) &lt;= aT(n/b) + f(n)
+   ◇ when n &lt; b then T(n) is a constant.
+• may use substitution method
+   ◇ guess the form of a solution
+      ▪ T(n) &lt;= cg(n) with g as a specific function
+   ◇ use mathematical induction to
+      ▪ verify solution exists
+      ▪ find suitable c
+      ▪ establish T ∈ O(g)
+• Ex 1
+   ◇ T(n) &lt;= 2T(n/2) + n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+   ◇ let us prove that T(n) ∈ O(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>) by finding c &gt; - s.t. can prove T(n) &lt;= cn</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text> for n &gt;= 1 by induction
+      ▪ induction case: n &gt;= 2
+         - 1 &lt;= floor(n/2) &lt; n
+         - apply IH on floor(n/2)
+      ▪ T(n) &lt;= 2T(floor(n/2)) + n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+      ▪ </rich_text>
 			<codebox char_offset="51" frame_height="120" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">F(A[1..n])
     if n = 1
         return ...
