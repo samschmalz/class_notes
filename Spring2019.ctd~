@@ -953,7 +953,7 @@ Barometer Instructions
    ◇ can be used to estimate total running time
    ◇ estimate number of times barometer instruction is executed</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Recursive Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550092277.35" ts_lastsave="1550264327.9" unique_id="15">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Analysis of Recursive Programs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550092277.35" ts_lastsave="1550867153.56" unique_id="15">
 			<rich_text>
 Assume recursive calls have one less parameter:
 • </rich_text>
@@ -1044,6 +1044,44 @@ Substitution Method
 			<rich_text scale="sup">2</rich_text>
 			<rich_text> &lt;= cn</rich_text>
 			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+
+
+General Recurrence Solving
+• Master Theorem:
+   ◇ given recurrence T(n) = aT(n/b) + f(n) for n &gt; n</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text>
+   ◇ with
+      ▪ b &gt;= 2 as an integer
+      ▪ floor or ceiling around n/b
+      ▪ T eventually non-decreasing
+   ◇ with r=log</rich_text>
+			<rich_text scale="sub">b</rich_text>
+			<rich_text>a solutions are (X ∈ {O, Ω, Θ}
+
+
+Intuition behind Master Theorem
+• if T(n) = aT(n/b) + f(n) then
+   ◇ T(n) = f(n) +aT(n/b) = f(n) + af(n/b) + a</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>T(n/b</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>) = f(n) + af(n/b) + a</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>T(n/b</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>) + ... + a</rich_text>
+			<rich_text scale="sup">(logbn)</rich_text>
+			<rich_text>
+• if f ∈ Θ(n</rich_text>
+			<rich_text scale="sup">q</rich_text>
+			<rich_text>) then each term is a/b</rich_text>
+			<rich_text scale="sup">q</rich_text>
+			<rich_text> bigger than previous term
+
+
+</rich_text>
 			<codebox char_offset="51" frame_height="120" frame_width="320" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">F(A[1..n])
     if n = 1
         return ...
@@ -1058,6 +1096,30 @@ Substitution Method
         MergeSort(A[m+1..n])
         B[1..n] &lt;- Merge(A[1..m],A[m+1..n])
         Copy(B[1..n],A[1..n])</codebox>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550868362.66" ts_lastsave="1550869030.03" unique_id="16">
+			<rich_text>
+Dutch National Flag
+• input: array of items, each having prop of red, white, or blue
+
+
+Application in Selection Problem
+• find the kth smallest element in A, let
+   ◇ p be some element in A
+   ◇ those elements smaller than p be red
+   ◇ those elems == to p be white
+   ◇ elems larger than p be blue
+• dutch national flag finds r red elems, w white, and b blue
+   ◇ if k &lt;= r, return kth smallest elem in red
+   ◇ if k &gt; r+w, return k - r - wth smallest elem in blue partition
+
+
+Top-down solution
+• reduce instance of size n &gt; 0 to instance of size n - 1 by examining last item
+   ◇ if it is blue, ignore it
+   ◇ if it is blue, swap with first item and ignore it
+   ◇ else:
+      ▪ temporarily ignore it and solve remaining problem</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
