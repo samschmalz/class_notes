@@ -430,7 +430,7 @@ Growing Interest
 • Navigational Acts (1660-1715)
    ◇ everything goes through London</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Colonial Life" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549985247.65" ts_lastsave="1549987987.45" unique_id="14">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Colonial Life" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1549985247.65" ts_lastsave="1551195681.85" unique_id="14">
 			<rich_text>
 Impact of African Slave Trade
 • slavery is not new to Americas
@@ -477,6 +477,130 @@ Salem
 • absurd trials
    ◇ 4-year-old imprisoned
    ◇ 80-year-old woman also accused</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="The Revolution" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1551195681.85" ts_lastsave="1551800440.46" unique_id="17">
+			<rich_text>
+Crisis and Rebellion
+• Olive Branch Petition (July 1775)
+   ◇ want King George to stop listening to his ministers and talk with Congress
+   ◇ Congress has approved an invasion into British Canada
+   ◇ no response to the petition
+      ▪ unknown if he read it and ignored it or not
+• Thomas Paine's </rich_text>
+			<rich_text style="italic">Common Sense</rich_text>
+			<rich_text> (Jan 1776)
+   ◇ government is a necessary evil
+   ◇ evaluate a government by how well it keeps more evil parts of humanity in check
+• Hessians (Aug 1776)
+   ◇ arrived after signing of Declaration of Independence
+   ◇ travel by boat takes time
+      ▪ left before DoI was created
+• Declaration of Independence
+
+
+Articles of Confederation
+• first constititution of the US (1777)
+   ◇ envisioned similar to a congress
+• anxious about centralized power
+   ◇ voted on issues
+   ◇ needed unanimous vote
+• monetary problems
+   ◇ men leave farms to fight the war
+• republicanism
+   ◇ as an idea or theory
+   ◇ all power should come from the people being governed
+
+
+Women in Wartime
+• not officially allowed to join the army
+• took up jobs in the cities
+   ◇ protested the British soldiers being housed there
+   ◇ stashed away supplies
+• some followed the camps around
+   ◇ provided laundry, clothes mending, etc.
+   ◇ provided some medical help
+   ◇ prostitution
+
+
+Revolution and Native Peoples
+• last chance to make a decision
+   ◇ side with british and hope for better deal
+   ◇ try to endear themselves to the colonists
+
+
+Legacies of War
+• Birth of a Nation
+• Flight of loyalists
+• George Washington
+• Radical workings of republicanism</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="More Stuff" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1551800440.46" ts_lastsave="1551802827.52" unique_id="19">
+			<rich_text>
+Philadelphia Convention, 1787
+• formed from desire for more structured government
+• just after Shay's rebellion
+   ◇ war veterans aren't getting paid
+   ◇ have houses/farms forclosed on by the states
+• mostly well-known figures, plus a farmer
+   ◇ Ben Franklin, George Washington, etc.
+   ◇ representatives of 13 colonies
+• Changes to the Articles of Confederation
+   ◇ James Madison - Virginia Plan
+      ▪ articles are hopeless, need to start from scratch
+      ▪ wants two houses in legislature
+      ▪ “Lower House” votes determined by population
+         - same as House of Reps. today
+      ▪ people from lower house elected into “Upper House”
+         - could leave smaller states without representation
+      ▪ liked more by bigger states
+   ◇ William Paterson - New Jersey Plan
+      ▪ wants something similar to Articles
+      ▪ one-house legislature
+      ▪ same representation from each state
+         - same as Senate today
+      ▪ liked more by smaller states
+• Compromise
+   ◇ 2-house legislature that we have today
+   ◇ Slavery?
+      ▪ 3/5 compromise
+      ▪ 6 slaves would count for 3 people
+         - matters with </rich_text>
+			<rich_text style="italic">representation and taxation</rich_text>
+			<rich_text>
+      ▪ only in the lower house, where votes are determined by representation
+
+
+Federalism
+• Anti-Federalists
+   ◇ believed that republics should be small to avoid factions
+   ◇ presidency seems to close to a King
+   ◇ fear for states rights
+   ◇ demanded there be listed individual rights
+• Federalists
+   ◇ Federalist Papers
+      ▪ Alexander Hamilton, James Madison, John Jay
+      ▪ “An Extended Republic”
+         - actually better and more capable of controlling factions
+      ▪ “Natural Aristocrats”
+         - People rise according to merit
+• Leads to Bill of Rights
+
+
+Creating an Extended Republic
+• George Washington
+   ◇ inaugurated on April 30, 1789
+   ◇ unanimous vote
+   ◇ created a cabinet
+      ▪ no explicit rules written about what is allowed
+      ▪ creates Secretary of War, Treasury, etc.
+• Alexander Hamilton
+   ◇ Secretary of Treasury
+• Whiskey Rebellion (1794)
+   ◇ distillers taxed more
+   ◇ hits small distributors harder
+• National Bank
+
+</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS575" prog_lang="plain-text" readonly="False" tags="" ts_creation="1548275231.51" ts_lastsave="1548275231.51" unique_id="3">
@@ -1097,7 +1221,7 @@ Intuition behind Master Theorem
         B[1..n] &lt;- Merge(A[1..m],A[m+1..n])
         Copy(B[1..n],A[1..n])</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550868362.66" ts_lastsave="1550868948.52" unique_id="16">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Algorithms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1550868362.66" ts_lastsave="1551472197.59" unique_id="16">
 			<rich_text>
 Dutch National Flag
 • input: array of items, each having prop of red, white, or blue
@@ -1115,7 +1239,258 @@ Application in Selection Problem
 
 
 Top-down solution
-• reduce instance of size n &gt; 0 to instance of size n - 1 by examining last item</rich_text>
+• reduce instance of size n &gt; 0 to instance of size n - 1 by examining last item
+   ◇ if it is blue, ignore it
+   ◇ if it is blue, swap with first item and ignore it
+   ◇ else:
+      ▪ temporarily ignore it and solve remaining problem
+      ▪ swap with first blue item, if there is one</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Graphs" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1551472197.59" ts_lastsave="1551904412.81" unique_id="18">
+			<rich_text>
+Basic Concepts
+• directed graph G consists of
+   ◇ vertices (V), also called nodes
+   ◇ edges (E) where an edge
+      ▪ goes from source node
+      ▪ goes to a target node (which may equal the source)
+      ▪ may carry extra data (distance/weight)
+• No multigraphs:
+   ◇ two distinct edges cannot have same source and target
+• Path (of length n) from u</rich_text>
+			<rich_text scale="sub">0</rich_text>
+			<rich_text> to u</rich_text>
+			<rich_text scale="sub">n</rich_text>
+			<rich_text> is a sequence of edges
+• size of graph is measured as
+   ◇ n, number of nodes (|V|)
+   ◇ a, number of edges (|E|)
+      ▪ 0 &lt;= a &lt;= n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>
+
+
+Undirected graphs
+• similar to directed, except
+   ◇ edges do not have direction
+   ◇ no self-loops
+• edge is now between two different nodes
+   ◇ now 0 &lt;= a &lt;= n*(n-1)
+
+
+Cycles
+• for directed graph, a cycle is
+   ◇ path of length &gt;= 1 from a node to itself
+• given directed acyclic graph (DAG), is possible to find topological sort of the nodes
+   ◇ a numbering u</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text>, ... u</rich_text>
+			<rich_text scale="sub">n</rich_text>
+			<rich_text> of the nodes s.t.
+   ◇ if there is an edge from u</rich_text>
+			<rich_text scale="sub">i</rich_text>
+			<rich_text> to u</rich_text>
+			<rich_text scale="sub">j</rich_text>
+			<rich_text> then i &lt; j
+• for undirected graph, cycle consists of
+   ◇ path between u and v, together with
+   ◇ an edge between v and u that does not occur in that path
+
+
+Connectivity
+• for undirected graph, nodes u and v are connected if
+   ◇ exists a path between u and v
+• for a directed graph, nodes u and v are
+   ◇ strongly connected if there exists a path from u to v </rich_text>
+			<rich_text weight="heavy">and</rich_text>
+			<rich_text> a path from v to u
+   ◇ connected if there exists a path from u to v </rich_text>
+			<rich_text weight="heavy">or</rich_text>
+			<rich_text> a path from v to u
+   ◇ weakly connected if u and v are connected in the corresponding undirected graph
+   ◇ we say that G is (strongly) connected if al u, v ∈ G are (strongly) connected
+
+
+Trees
+• undirected graph is called a tree if it is
+   ◇ connected
+   ◇ acyclic
+• often identify a non-empty tree w/ its root node
+   ◇ each tree node but the root has exactly one parent
+   ◇ all tree nodes have root as ancestor
+   ◇ a leaf is a node where all children are empty
+   ◇ in binary trees, all nodes have exactly two children
+
+
+Distance Metrics in Rooted Trees
+• for a rooted tree T, may define distance from T to any subtree of T:
+   ◇ distance from T to itself is 0
+   ◇ distance from T to child of T is 1
+   ◇ distance from T to child of a child of T is 2, etc.
+• given tree T, for non-empty nodes q in T we define
+   ◇ Depth(q): distance from root to q
+   ◇ Height(q): maximal distance from q to a leaf
+• nodes w/ same depth are said to be at same level
+
+
+Basic operations
+• representation of graphs must allow following operations:
+• Get(i,j)
+   ◇ checks whether there is an edge from i to j, if so it also returns any extra data
+• Put(i,j,x)
+   ◇ adds edge from i to j, together with extra data x
+   ◇ if edge from i to j exists, may choose to require an error message
+• AllFrom(i)
+   ◇ returns list of edges with source i
+
+
+Adjacency Matrix Implementation
+• representation choice:
+   ◇ Adjacency Matrix where entry at row i and column j specifies whether there is an edge from i to j (and contians any extra data)
+   ◇ get runs in time Θ(1)
+   ◇ put runs in time Θ(1)
+   ◇ AllFrom runs in time Θ(n) (even in best case
+• adjacency list
+   ◇ to each i associates a list of nodes j (w/ extra data) s.t. there is an edge from i to j
+   ◇ Get(i, _) runs in time Θ(n)
+      ▪ in worst case where i has many neighbors
+   ◇ Put runs in time Θ(1)
+      ▪ Θ(n) if check for duplicates
+   ◇ AllFrom runs in time Θ(1)
+      ▪ simply return list at j
+• Trade-offs
+   ◇ Drawback of adjacency lists:
+      ▪ occurs if graph is dense
+         - Get will be Θ(n)
+   ◇ drawback of adjacency matrix
+      ▪ occurs if graph is sparse</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Heaps" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1551904412.81" ts_lastsave="1552078606.54" unique_id="20">
+			<rich_text>
+Priority Queues
+• A priority queue
+   ◇ is a collection of records with keys
+   ◇ allows following operations:
+      ▪ insert: a record is added to the collection
+      ▪ FindMax: record with highest key is returned
+      ▪ DeleteMax: record with highest key is deleted from collection
+
+
+Priority Queues by Arrays
+• if implemented by unsorted array:
+   ◇ Insert ∈ Θ(1)
+   ◇ Find/DeleteMax
+• if implemented by sorted array:
+   ◇ Find/DeleteMax ∈ Θ(1)
+   ◇ Insert ∈ Θ(n)
+• need better option, with all operations sub-linear
+
+
+The Heap Property
+• A heap is a rooted tree that satisfies the heap property:
+   ◇ if q is a child of p then K(p) &gt;= K(q)
+• Thus parents have key sat least as big as their children
+   ◇ sometimes we want the </rich_text>
+			<rich_text style="italic">dual</rich_text>
+			<rich_text> property instead
+   ◇ don't confuse with garbage-collected memory (Java)
+
+
+Heap Property Maintenance: Sift Down
+• Heap property may be violated if the key of a node n decreases
+   ◇ then have to “sift down” n
+• Sift Down:
+   ◇ while n has child with bigger key
+      ▪ swap n and child with biggest key
+• worst case running time in Θ(h) with h as the tree height
+
+
+Heap Property Maintenance: Percolate Up
+• Heap property may be violated if the key of a node n increases
+   ◇ have to “percolate” n
+• Percolate Up:
+   ◇ while n has parent with smaller key:
+      ▪ swap n and parent
+• Worst case running time in Θ(h) with h as tree height
+
+
+Priority Queues by Heaps
+• with heap implementation:
+   ◇ FindMax: just take root, this is Θ(1)
+   ◇ Insert:
+      ▪ insert new node as a leaf
+      ▪ percolate leaf up
+      ▪ This is in Θ(h)
+   ◇ DeleteMax:
+      ▪ move one leaf to the root
+
+
+Representation of Heaps
+• use rooted trees that are binary and
+   ◇ essentially complete
+      ▪ balanced, except that some rightmost leaves may be missing
+• can use an array A to represent an essentially complete binary tree
+   ◇ if it has k elements then A[1..k] are used
+      ▪ A[1] is root
+      ▪ A[2] and A[3] are left and right children of root,
+      ▪ A[4..7] grandchildren of root, etc
+   ◇ in general, can easily compute:
+      ▪ Parent(i) = [i/2]
+      ▪ leftchild(i) = 2i
+      ▪ rightchild(i) = 2i + 1
+
+
+Converting a Tree into a Heap
+• given an essentiall complete binary tree we want to:
+   ◇ convert it into a heap
+   ◇ use node-swapping only
+• Method:
+   ◇ for each node
+      ▪ recursively convert children into heaps
+      ▪ sift down the node
+   ◇ can be implemented bottom-up by processing the array downwards:
+      ▪ </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+
+Cost of Heap Conversion, Attempt 1
+• recall method for each node
+   ◇ cost: sum(i = 1 -&gt; n) { O(height(i)) }
+   ◇ crude approximation: n lg(n)
+   ◇ tentative recurrence: T(n) = 2T(n/2) + lg(n)
+      ▪ has solution T(n) ∈ Θ(lg(n))
+      ▪ one subtree may be larger than the other, so not as accurate
+
+
+Heap Sort
+• Given array A[1..n] to be sorted we
+   ◇ convert to heap
+   ◇ let i traverse from n down to 1 while maintaining invariant
+      ▪ A[i+1..n] consists of th en-i largest elements, in non-decreasing order
+      ▪ A[1..i] has the heap property
+      ▪ can be done as follows:
+         - exchange A[1] and A[i]
+         - sift down A[1] in tree A[1..i-1]
+
+Complexity of Heap Sort
+• Recall that to sort an array of n elements, we
+   ◇ convert to heap, in time Θ(n)
+   ◇ for i from n down to 1:
+      ▪ exchange A[1] and A[i], in time Θ(1)
+      ▪ Sift down A[1] in heap A[1..i] in time Θ(lg(i))
+   ◇ contributes sum(i=1 to n) {lg(i)}
+      ▪ which we know is in Θ(n lg(n))
+• thus heap sort has
+   ◇ time complexity in Θ(n lg(n)) which improves insertion sort
+   ◇ space complexity in Θ(1), i.e. in place
+      ▪ improves merge-sort
+
+
+</rich_text>
+			<codebox char_offset="2463" frame_height="60" frame_width="170" highlight_brackets="True" show_line_numbers="False" syntax_highlighting="plain-text" width_in_pixels="True">Convert(A[1..n]
+    for i &lt;- n downto 1
+        sift(i)</codebox>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
