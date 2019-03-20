@@ -534,7 +534,7 @@ Legacies of War
 • George Washington
 • Radical workings of republicanism</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="More Stuff" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1551800440.46" ts_lastsave="1551802827.52" unique_id="19">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="More Stuff" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1551800440.46" ts_lastsave="1553005624.11" unique_id="19">
 			<rich_text>
 Philadelphia Convention, 1787
 • formed from desire for more structured government
@@ -599,6 +599,106 @@ Creating an Extended Republic
    ◇ distillers taxed more
    ◇ hits small distributors harder
 • National Bank
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Expanding Opportunities" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1553005624.12" ts_lastsave="1553009149.79" unique_id="22">
+			<rich_text>
+French Revolution
+• few months after American revolution ends
+• causes
+   ◇ famine
+   ◇ high national debt
+      ▪ partially from helping American revolution
+   ◇ high taxes on poor
+   ◇ nobility's high and conspicuous consumption
+• radical turn in 1793
+   ◇ beheading of Loux XVI and Marie Antoinette
+   ◇ War between France and Britain
+   ◇ Intense debate in U.S.
+      ▪ help France (who helped us)
+      ▪ help Britain (who we trade with)
+
+
+Washington Administration
+• Impression Begins Again
+   ◇ US sailors forced to work on British ships
+• Jay's Treaty
+   ◇ 1794-1795
+   ◇ Chief Justice John Jay tries to negotiate treaty with Britain
+      ▪ claims that Britain is US's favorite nation
+      ▪ very unpopular in France and US
+   ◇ Britain promises to leave forts in the west of the US
+• Indian Trade and Intercourse Acts (1790s)
+   ◇ rules about how to interact with native americans
+   ◇ leads to creation of more production and factories
+      ▪ try to show how well-off American society is
+
+
+Adams Administration
+• Election of 1796
+   ◇ runner-up becomes VP
+      ▪ Thomas Jefferson gets beaten by Adams
+      ▪ causes friction within cabinet
+• XYZ Affair
+   ◇ Quasi-war between France and Britain
+   ◇ Newspaper War
+      ▪ lots of propaganda from each side
+   ◇ Alien and Sedition Acts
+      ▪ Britain starts stealing British ships
+
+
+Jefferson's Empire of Liberty
+• Jefferson defeates Adams in 1800 by campaigning republican simplicity
+   ◇ reduces size of navy
+   ◇ almost disbands the army entirely
+      ▪ still a bit of fear of standing armies
+• Wants American society to expand westward
+   ◇ hoped Native Americans could become friends or even equals
+• France and England return to war in 1804
+
+
+Prior to the Market Revolution
+• Manufacturing done by hand in homes
+• Majority of population was employed in agriculture
+   ◇ farmers were self-sufficient
+   ◇ not much trade within US
+      ▪ no incentive to trade with neighbors or anything nearby
+• transporting good was expensive and risky
+
+
+American Industry
+• Textile mills developed in New England in 1814
+   ◇ helped by improved transportation
+   ◇ rise of cotton in the south
+• created interdependence between
+   ◇ industrial North
+   ◇ cotton-producing South
+   ◇ agrarian West
+
+
+Inventions
+• Cotton Gin (1793)
+   ◇ Eli Whitney
+   ◇ removes seeds from cotton product
+   ◇ multiple slaves all day -&gt; one slave for a few hours
+• Interchangeable parts
+   ◇ allows repairs
+• Turnpikes &amp; Roads
+• Steamboat (1807)
+
+
+Second Great Awakening
+• 1800-1840
+• Christian revival movement
+   ◇ proliferation of new churches
+   ◇ increase in church membership nationwide
+• Churches provided community for new settlers and new perspective on salvation
+   ◇ Itinerant and lay preachers
+   ◇ simplify subject matter, kept in theological terms still
+• conversions common among slaves and blacks
+• white women given public roles
+   ◇ Robert Fulton
 
 </rich_text>
 		</node>
@@ -1492,7 +1592,7 @@ Complexity of Heap Sort
     for i &lt;- n downto 1
         sift(i)</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Divide and Conquer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1552079348.18" ts_lastsave="1552079742.14" unique_id="21">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Divide and Conquer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1552079348.18" ts_lastsave="1553111624.63" unique_id="21">
 			<rich_text>
 D&amp;C template
 • given: problem of size n
@@ -1510,7 +1610,37 @@ Merge Sort
    ◇ recombine merges two sorted arrays
 • spec
    ◇ Merge has running time in Θ(n)
-   ◇ MergeSort has running time in Θ</rich_text>
+   ◇ MergeSort has running time in Θ
+
+
+Quicksort
+• instantiation of divide and conquer paradigm
+• decompose
+   ◇ choose pivot element p
+   ◇ rearrange array into 3 parts
+      ▪ elements &lt; p
+      ▪ elements == p
+      ▪ elements &gt; p
+   ◇ accomplished by Dutch National Flag in O(n) time but constant space
+• recombine does nothing
+• space use is
+   ◇ potentially linear (due to recursion stack)
+   ◇ O(lg n) if process shortest part first
+
+
+Quicksort running time
+• crucial question: choosing the pivot
+   ◇ since decomposition is in Θ(n) we can spend O(n) on choosing w/o affecting asymptotic complexity
+   ◇ if unfortunate to choose smallest element then runs in Θ(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>)
+   ◇ if we pick element s.t. only 10% are smaller than pivot, runs in O(n lg(n))
+   ◇ if pick pivot randomly
+
+
+Multiplying Large Integers
+• Goal: multiply big integers
+• Given: how to multiply small integers</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
