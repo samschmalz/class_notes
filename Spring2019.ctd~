@@ -1592,7 +1592,7 @@ Complexity of Heap Sort
     for i &lt;- n downto 1
         sift(i)</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Divide and Conquer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1552079348.18" ts_lastsave="1553111018.76" unique_id="21">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Divide and Conquer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1552079348.18" ts_lastsave="1553715843.98" unique_id="21">
 			<rich_text>
 D&amp;C template
 • given: problem of size n
@@ -1635,7 +1635,61 @@ Quicksort running time
 			<rich_text scale="sup">2</rich_text>
 			<rich_text>)
    ◇ if we pick element s.t. only 10% are smaller than pivot, runs in O(n lg(n))
-   ◇ if pick pivot randomly</rich_text>
+   ◇ if pick pivot randomly
+
+
+Multiplying Large Integers
+• Goal: multiply big integers
+• Given: how to multiply small integers
+• may write a wn-digit number as wd</rich_text>
+			<rich_text scale="sup">n</rich_text>
+			<rich_text>+x
+   ◇ w,x being n-digit numbers
+• Multiplying two 2n-digit numbers amounts to computing
+   ◇ (wd</rich_text>
+			<rich_text scale="sup">n</rich_text>
+			<rich_text>+x)(yd</rich_text>
+			<rich_text scale="sup">n</rich_text>
+			<rich_text>+z)
+   ◇ which equals wyd</rich_text>
+			<rich_text scale="sup">2n</rich_text>
+			<rich_text> + (wz + xy)d</rich_text>
+			<rich_text scale="sup">n</rich_text>
+			<rich_text>+xz
+• so it suffices to do 4 multiplications of n-digit numbers
+   ◇ wy, wz, xy, xz
+• giving recurrence T(n) ∈ 4T(n/2) + O(n)
+   ◇ yielding T(n) ∈ Θ(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>)
+
+
+Selection Problem
+• to find kth smallest element in A
+   ◇ choose pivot element p;
+   ◇ run DutchNationalFlag on A
+• yields
+   ◇ r red elements &lt; p, followed by
+   ◇ w elements = p, followed by
+   ◇ b blue elements &gt; p
+• Then
+   ◇ if k &lt;= r, return k'th smallest element in red partition
+   ◇ if k &gt; r+w, return k - r -w'th smallest element in blue partition
+   ◇ otherwise, return p
+• running time in Θ(n</rich_text>
+			<rich_text scale="sup">2</rich_text>
+			<rich_text>) if pivot chosen by “enemy”
+   ◇ worst possible element
+
+
+Using median as pivot
+• if can find median in linear time
+   ◇ then get recurrenct T(n) ∈ T(n/2) + Θ(n)
+   ◇ and thus T(n) ∈ Θ(n)
+• but finding median is special case of selection
+   ◇ looks like “chicken and egg” problem
+
+</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
