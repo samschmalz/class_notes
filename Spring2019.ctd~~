@@ -1592,7 +1592,7 @@ Complexity of Heap Sort
     for i &lt;- n downto 1
         sift(i)</codebox>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Divide and Conquer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1552079348.18" ts_lastsave="1553715781.27" unique_id="21">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Divide and Conquer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1552079348.18" ts_lastsave="1553887968.25" unique_id="21">
 			<rich_text>
 D&amp;C template
 • given: problem of size n
@@ -1686,8 +1686,63 @@ Using median as pivot
 • if can find median in linear time
    ◇ then get recurrenct T(n) ∈ T(n/2) + Θ(n)
    ◇ and thus T(n) ∈ Θ(n)
+• but finding median is special case of selection
+   ◇ looks like “chicken and egg” problem
+• Instead, go for pseudo-median
+   ◇ resulting partitioning isn't too imbalanced
 
 </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Dynamic Programming" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1553887968.25" ts_lastsave="1553889664.46" unique_id="23">
+			<rich_text>
+Problem: Duplication of Computation
+• naive implementation of recursive equation like
+   ◇ f(n) = f(n-1) + f(n-2)
+   ◇ may lead to computation being duplicated
+• can cause running time to be exponential even though values can be computed bottom-up in polynomial time
+• similarly, binomials nCk = (n-1)Ck + (n-1)C(k-1) can be computed bottom-up using Pascal's triangle3
+
+
+Solution: Dynamic Programming
+• Assume problem can be phrased s.t.
+   ◇ are number of subproblesm whose solutions can be organized as a table
+   ◇ recurrence describes how table entries depend on eahc other
+   ◇ some entries needed more than once
+• then Dynamic Programming (DP) is applicable
+   ◇ compute entreis that do not depend on others
+   ◇ compute entries that depend on those entries
+   ◇ etc.
+• Caveat: some entries may be superfluous.
+
+
+Giving Exact Change
+• Problem: given set of coins (unlimited supply of each denomination), produce:
+   ◇ exact change for given amount
+   ◇ using minimal # of coins
+• is always possible?
+   ◇ not if must return 7c using 5c and 3c coins
+   ◇ is always possible with 1c coins
+• suggested solution (greedy):
+   ◇ return as many as poss. from highest denom; return as many as poss. from second highest, etc.
+   ◇ is always optimal?
+      ▪ for US coin set {25,10,5,1}: yes
+      ▪ but not always
+
+
+Giving Exact Change, Solution
+• recall task:
+   ◇ given denominations d</rich_text>
+			<rich_text scale="sub">1</rich_text>
+			<rich_text> ... d</rich_text>
+			<rich_text scale="sub">n</rich_text>
+			<rich_text>, produce exact change for given amount A w/ minimal # of coins
+   ◇ construct table c[0..n, 0..A] s.t.
+      ▪ c[i,a] is min # of coins required to pay exactly a using only coins from set
+   ◇ c[i,a] is computed from c's value on smaller (i, a) by
+      ▪ if a = 0 then 0
+      ▪ else if i = 0 then infinity
+      ▪ else if a &lt; d</rich_text>
+			<rich_text scale="sub">i</rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="CIS598" prog_lang="plain-text" readonly="False" tags="" ts_creation="1549312135.84" ts_lastsave="1549312135.84" unique_id="8">
